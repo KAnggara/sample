@@ -12,20 +12,17 @@ int main()
       hasil = i * hasil;
       printf("%dx", i);
     }
-    printf("\nFaktorial %d adalah %d \n", bil, hasil);
+    printf("\nFaktorial %d adalah %d ", bil, hasil);
   }
   else if (bil == 0)
   {
-    printf("Faktorial %d adalah 1 \n", bil);
+    printf("Faktorial %d adalah 1 ", bil);
   }
   else
   {
-    for (i = bil; i <= -1; i++)
-    {
-      hasil = i * hasil;
-      printf("%dx", i);
-    }
-    printf("\nFaktorial %d adalah %d \n", bil, hasil);
+    printf("\n%d adalah bilangan Negatif", bil);
+    printf("\n%d Faktorial Tidak Terdefenisi", bil);
   }
+  printf("\n");
   return 0;
 }
